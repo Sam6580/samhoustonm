@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestion Box Backend – Showcase</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+</head>
+
+<body class="bg-gray-50 font-sans text-gray-800">
+  <header class="bg-gradient-to-r from-blue-600 to-indigo-700 py-6 shadow-md text-white">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold" id="typed-title"></h1>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">🧑‍💻 About Me</h2>
+      <p class="text-lg leading-relaxed">
+        I'm <strong>Sam Houston M</strong>, a passionate and self-driven <strong>Computer Science and Engineering (CSE) student</strong> currently in my 2nd year at <strong>Rajalakshmi Institute of Technology, Chennai</strong>.
+        I thrive on building practical, real-world solutions and enjoy diving into <strong>AI/ML</strong>, <strong>web development</strong>, and <strong>backend systems</strong>.
+      </p>
+      <p class="text-lg leading-relaxed mt-2">
+        As someone who enjoys learning by doing, I’ve worked on projects involving <strong>AI-integrated feedback systems</strong>, automated <strong>email responders</strong>, and <strong>data-driven dashboards</strong> using technologies like <strong>Node.js</strong>, <strong>MongoDB</strong>, and <strong>OpenRouter API</strong>.
+      </p>
+      <p class="text-lg leading-relaxed mt-2">
+        I'm actively seeking internship opportunities to expand my skill set, collaborate with talented developers, and contribute meaningfully to innovative tech solutions.
+      </p>
+      <ul class="mt-4 space-y-1 text-base">
+        <li>📬 <strong>Email</strong>: <a href="mailto:sam13houston658maganne@gmail.com" class="text-blue-600">sam13houston658maganne@gmail.com</a></li>
+        <li>📱 <strong>Phone / WhatsApp</strong>: +91 9360469329</li>
+        <li>🌐 <strong>GitHub</strong>: <a href="https://github.com/Sam6580" class="text-blue-600" target="_blank">Sam6580</a></li>
+        <li>🔗 <strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/sam-houston-70779532b" class="text-blue-600" target="_blank">Sam Houston</a></li>
+      </ul>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">✨ Features</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Secure suggestion collection form with AI-generated replies.</li>
+        <li>Impact scoring using NLP and intensity classification.</li>
+        <li>Admin dashboard with email reply integration.</li>
+        <li>MongoDB-powered backend with Express.js and Node.js.</li>
+        <li>Interactive UI for real-time updates.</li>
+      </ul>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">⚙️ Tech Stack</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <span class="bg-blue-100 text-blue-800 py-2 px-4 rounded-full text-sm font-medium">Node.js</span>
+        <span class="bg-green-100 text-green-800 py-2 px-4 rounded-full text-sm font-medium">Express.js</span>
+        <span class="bg-yellow-100 text-yellow-800 py-2 px-4 rounded-full text-sm font-medium">MongoDB</span>
+        <span class="bg-pink-100 text-pink-800 py-2 px-4 rounded-full text-sm font-medium">OpenRouter API</span>
+        <span class="bg-purple-100 text-purple-800 py-2 px-4 rounded-full text-sm font-medium">Nodemailer</span>
+        <span class="bg-red-100 text-red-800 py-2 px-4 rounded-full text-sm font-medium">Tailwind CSS</span>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">📦 How to Run</h2>
+      <ol class="list-decimal list-inside space-y-2">
+        <li>Clone this repository: <code class="bg-gray-200 px-2 py-1 rounded">git clone https://github.com/Sam6580/suggestion-box-backend.git</code></li>
+        <li>Install dependencies: <code class="bg-gray-200 px-2 py-1 rounded">npm install</code></li>
+        <li>Configure your <code>.env</code> file:
+          <pre class="bg-gray-100 p-4 rounded text-sm">
+MONGODB_URI=your_mongodb_uri
+OPENROUTER_API_KEY=your_openrouter_key
+EMAIL_USER=admin@example.com
+EMAIL_PASS=yourpassword
+          </pre>
+        </li>
+        <li>Run the server: <code class="bg-gray-200 px-2 py-1 rounded">node server.js</code></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">🎯 Use Cases</h2>
+      <p>Perfect for colleges and universities to digitize student feedback and streamline communication through AI and automation.</p>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-600 py-4">
+    Built by Sam Houston M – 2025 Hackathon
+  </footer>
+
+  <script>
+    // Typing animation for title
+    new Typed("#typed-title", {
+      strings: ["📬 Suggestion Box Backend"],
+      typeSpeed: 60,
+      showCursor: false
+    });
+
+    // Scroll reveal for sections
+    ScrollReveal().reveal('section', {
+      distance: '40px',
+      duration: 1000,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      interval: 200
+    });
+  </script>
+</body>
+
+</html>
